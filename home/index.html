@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ProjetoPratico_DevWeb/home/css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <title>Sightseer's Guide</title>
 </head>
 
 <body>
     <!-- cabeçalho: -->
-    <header class="cabecalho" id="cabecalho-principal">
+    <header class="cabecalho">
         <nav>
             <ul>
-                <li><a href="/ProjetoPratico_DevWeb/home/index.html"><img src="./images/logo.svg" alt="logo sighteer's guide"></a></li>
+                <li><a href="/ProjetoPratico_DevWeb/home/index.html"><img src="./images/logo.svg" alt="logo sighteer's guide" width="203px" height="54px"></a></li>
                 <li><a href="/como planejar sua viagem/index.html">Planeje sua Viagem</a></li>
                 <li><a href="/ProjetoPratico_DevWeb/quem somos nós/quem somos nós.html">Quem somos Nós</a></li>
                 <li><a href="">Destinos</a></li>
@@ -23,7 +23,7 @@
     </header>
 
     <main>
-        <div class="1stpart">
+        <div class="firstpart">
             <h1>Descubra, explore, viaje!</h1>
             <h3>Sightseer’s Guide, sua fonte definitiva de descobertas turísticas!</h3>
             <form action="/ProjetoPratico_DevWeb/home/others/resultados.html">
@@ -32,15 +32,17 @@
             </form>
         </div>
 
-        <div>
+        <div class="message">
             <h3>Inspire-se, planeje e embarque em grandes aventuras com o Sightseer’s Guide!</h3>
+            <p>_____________</p>
         </div>
 
-        <div>
+        <div class="cards">
             <h2>Destinos Populares</h2>
+            <h3>_____________</h3>
             <p>Clique nos cards para saber mais sobre cada país!</p>
             <ul>
-                <li><a href="./cards/soutKorea.html"><img src="./cards/south korea.png" alt="Coréia do Sul"></a></li>
+                <li><a href="#" onclick="abrirPopUp();"><img src="./cards/south korea.png" alt="Coréia do Sul"></a></li>
                 <li><a href="./cards/italy.html"><img src="./cards/italy.png" alt="Itália"></a></li>
                 <li><a href="./cards/norway.html"><img src="./cards/norway.png" alt="Noruega"></a></li>
                 <li><a href="./cards/grecia.html"><img src="./cards/grécia.png" alt="Grécia"></a></li>
@@ -50,60 +52,44 @@
                 <li><a href="./cards/france.html"><img src="./cards/france.png" alt="França"></a></li>
                 <li><a href="./cards/australia.html"><img src="./cards/australia.png" alt="Austrália"></a></li>
             </ul>
-        </div>
-
-        <div class="slider">
+        </div> 
+        <div>
             <h2>Depoimentos</h2>
             <p>Descubra o que nossos usuários têm a dizer sobre sua experiência com o nosso site!</p>
-
-            <div class="slides">
-            <!-- as bolinhas de marcação -->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-            
-
-                <!-- imagens do carrossel dos depoimentos -->
-                <div class="slide first">
-                    <img src="./images/dep1.png" alt="Depoimento Jungkook">
-                </div>
-
-                <div class="slide second">
-                    <img src="./images/dep2.png" alt="Depoimento Harry Potter">
-                </div>
-
-                <div class="slide third">
-                    <img src="./images/dep3.png" alt="Depoimento Aurora">
-                </div>
-
-                <div class="slide fourth">
-                    <img src="./images/dep4.png" alt="Depoimento Post Malone">
-                </div>
-
-                <!-- navegação automática -->
-                <div class="navigation-auto">
-                    <div class="btn1"></div>
-                    <div class="btn2"></div>
-                    <div class="btn3"></div>
-                    <div class="btn4"></div>
-                </div>
-
-            </div>
-            
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
         </div>
+
+        <div class="jimin">
+            <img src="./images/jimin card.png" alt="Cadastre-se">
+            <div class="texto-sobre-imagem">
+                <p>Cadastre-se agora e desbloqueie um mundo de inspiração, dicas especializadas e recursos exclusivos.</p>
+                <a href=""><button>Cadastre-se</button></a>
+                <p>A próxima aventura está apenas a um clique de distância!</p>
+            </div>
     </main>
 
+    <!-- rodapé -->
     <footer>
-
+        <img src="./images/logo.svg" alt="Logo Sightseer's Guide" width="300.79px" height="75px">
+        <p style="font-size: 15px;">© 2023 Sightseer’s Guide. All Rights Reserved.</p>
+        <p style="font-size: 20px;">Siga em nossas redes sociais</p>
+        <ul>
+            <li><a href=""><img src="./images/facebooklogo.png" alt="Facebook" width="71px" height="71px"></a></li>
+            <li><a href=""><img src="./images/instagramlogo.png" alt="Instagram" width="71px" height="71px"></a></li>
+            <li><a href=""><img src="./images/twitterlogo.png" alt="Twitter" width="72.94px" height="60px"></a></li>
+        </ul>
+        <ul style="font-size: 16px;">
+            <li><a href="">Encontre um guia</a></li>
+            <li><a href="">Encontre um tour</a></li>
+            <li><a href="">Visite uma cidade</a></li>
+            <li><a href="">Visite um país</a></li>
+        </ul>
+        <ul style="font-size: 16px;">
+            <li><a href="">Sobre Nós</a></li>
+            <li><a href="">Destinos</a></li>
+            <li><a href="">Parceiros</a></li>
+        </ul>
+        <a href=""><button>Contate-nos</button></a>
     </footer>
-    <script src="./script.js"></script>
 </body>
 
 

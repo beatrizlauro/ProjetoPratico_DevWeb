@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo, .imglink{
+    
+    width: 200px;
+    height: 54px;
+    display: flex;
+    justify-content: left;
+    margin-right: 250px;
+    margin-left: 30px;
+}
+
+ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color:rgba(0, 0, 0, 0.76);
+}
+
+a:hover {
+    background-color:rgb(234, 233, 233);
+}
+
+.login{
+        padding: 0.5rem 1rem;
+        background-color: rgba(40, 108, 130, 1);
+        color: whitesmoke;
+        border-color: rgba(40, 108, 130, 1);
+        margin-left: 5rem;
+        margin-right: 3rem;
+        border-radius: 13px;
+}
+.login:hover {
+    background-color:rgba(205, 234, 255, 1);
+}
+
+.msg{
+    background: rgba(40, 108, 130, 1);
+    color: whitesmoke;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: left;
+    margin-top: 15rem;
+    width: 100%;
+    height: 200px;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.contato{
+    background: rgba(40, 108, 130, 1);
+    width: 400px;
+    height: 470px;
+    position: absolute;
+    top: 7rem;
+    right: 5rem;
+    border-radius: 13px;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+form, contato{
+        display: block;
+        margin-bottom: 1rem;
+}
+
+input{
+    border-radius: 13px;
+    width: 300px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1rem;
+}
+textarea{
+    border-radius: 13px;
+    width: 300px;
+    height: 200px;
+}
+
+label, .txtmsg{
+    color: whitesmoke;
+    margin-left: 2rem;
+}
+
+button{
+    width: 70px;
+    height: 30px;  
+    margin-top: 1rem;
+    border-radius: 13px;
+    margin-left: 7rem;
+}
+
+input, textarea,button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background-color: whitesmoke;
+}

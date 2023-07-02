@@ -1,31 +1,109 @@
 * {
     font-family: 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    margin: 0%;
+    box-sizing: border-box;
 }
 
-.cabecalho {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        text-align: right;
+header{
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    z-index: 2;
 }
 
-.cabecalho li {
-        display: inline;
-        margin-right: 10px;
+header .logoimage{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
 }
 
-.firstpart h1 {
+nav ul{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.menu li{
     color: white;
+    display: inline-block;
+} 
+
+.menu a:hover{
+    color: #FFF;
 }
 
-.firstpart form {
+.menu a:visited{
+    color:#FFF;
+}
+
+nav img{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    animation: animate 16s ease-in-out infinite;
+    background-size: cover;
+    z-index: 1;
+}
+
+.outer{
+    position:absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+}
+
+.details{
+    left: 50%;
+    top: 50%;
     text-align: center;
+    padding-top: 300px;
 }
 
-.firstpart h3 {
+@keyframes animate{
+    0%,100%{
+        background-image: url(./assets/images/praia.png);
+    }
+    25%{
+        background-image: url(./assets/images/borealis.png);
+    }
+    50%{
+        background-image: url(./assets/images/ny.png);
+    }
+}
+
+.details h1 {
+    font-size: 70px;
+    color: white;
+    padding-bottom: 49px;
+}
+
+.details h3 {
     color: #191970;
     font-size: 33px;
     text-align: center;
+}
+
+.details form{
+    text-align: center;
+    width: 650px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px #0019FF inset;
 }
 
 .message {
@@ -84,13 +162,45 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-footer {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+footer{
+    display: flex;
+    align-items: flex-end;
+    margin:0%;
+    width: 100%;
+    height: 217px;
+    flex-shrink: 0;
+    border-radius: 50px 50px 0px 0px;
+    background: #121D83;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
 }
 
-footer img, p, li {
-    display: inline;
-    margin-right: 10px;
+.logorodape{
+    display: block;
+    margin: 0 auto;
+    padding-left: 53px;
+    padding-top: 44px;
+    padding-bottom: 96px;
+    width: 300.787px;
+    height: 75px;
+    flex-shrink: 0;
+}
+
+.rightsreserved{
+    padding-left: 53px;
+    padding-top: 168px;
+    color: #FFF;
+    text-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+}
+
+.socialmedia{
+    text-align: center;
+    color: #FFF;
+    /* normal blur */
+    text-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.30);
+    font-size: 20px;
+    font-family: Trebuchet MS;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
 }

@@ -1,9 +1,0 @@
-/* Rectangle 21 */
-
-position: absolute;
-width: 1280px;
-height: 740px;
-left: 4px;
-top: 0px;
-
-background: rgba(0, 9, 95, 0.22);

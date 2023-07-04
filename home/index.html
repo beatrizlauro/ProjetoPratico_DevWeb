@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
     <title>Sightseer's Guide</title>
 </head>
 
@@ -15,10 +15,30 @@
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="">Planeje sua Viagem</a></li>
                         <li><a href="/ProjetoPratico_DevWeb/quem somos nós/quem somos nós.html">Quem somos Nós</a></li>
-                        <li><a href="">Destinos</a></li>
-                        <li><a href="/ProjetoPratico_DevWeb/login page/loginPage.html"></a><img src="./assets/images/login.svg" alt="login icon"></li>
+                        <li><a href="#Destinos">Destinos</a></li>
+                        <li><a href="#Contato">Contato</a></li>
+                        <!-- Botão de login -->
+                        <li class="botaologin">
+                            <button onclick="showModal0()"><img src="./assets/images/login.svg" alt="Login"></button>
+                            <div class="modal0" id="modal0">
+                                <div class="modal-content0">
+                                    <span class="closelogin" onclick="hideModal0()">&times;</span>
+                                <img src="./assets/images/logologin.png" alt="Logo Sightseer's Guide">
+                                <div class="bkglogin">
+                                    <div class="campo">
+                                        <label for="ilogin">E-mail</label>
+                                        <input type="email" name="login" id="ilogin" placeholder="Insira seu e-mail" required>
+                                    </div>
+                                    <div class="campo">
+                                        <label for="isenha">Senha</label>
+                                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" required>
+                                    </div>
+                                    <input type="submit" value="Login">
+                                </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -30,11 +50,16 @@
                 <div class="details">
                     <h1>Descubra, explore, viaje!</h1>
                     <h3>Sightseer’s Guide, sua fonte definitiva de descobertas turísticas!</h3>
-                    <form action="/ProjetoPratico_DevWeb/home/others/resultados.html">
-                    <input type="text" name="destinosSearch" placeholder="Qual o seu próximo destino?">
-                    <input type="submit" value="Buscar">
-            </form>
                 </div>
+                <form action="/ProjetoPratico_DevWeb/home/others/resultados.html">
+                    <div class="input-container">
+                        <img src="./assets/images/pin icon.png" alt="Destino Icon" class="pin">
+                        <input type="text" placeholder="Qual será o seu próximo destino?">
+                        <button type="submit">
+                            <img src="./assets/images/lupa 1.png" alt="Pesquisa">
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -43,43 +68,378 @@
             <p>_____________</p>
         </div>
 
-        <div class="cards">
+        <div class="cards" id="Destinos">
             <h2>Destinos Populares</h2>
             <h3>_____________</h3>
-            <p>Clique nos cards para saber mais sobre cada país!</p>
+            <p>Clique nos nos botões abaixo para saber mais sobre cada país!</p>
             <ul>
-                <li><a href="./cards/southKorea.html" onclick="abrirPopUp();"><img src="./assets/cards img/south korea.png" alt="Coréia do Sul"></a></li>
-                <li><a href="./cards/italy.html" onclick="abrirPopUp();"><img src="./assets/cards img/italy.png" alt="Itália"></a></li>
-                <li><a href="./cards/norway.html" onclick="abrirPopUp();"><img src="./assets/cards img/norway.png" alt="Noruega"></a></li>
-                <li><a href="./cards/grecia.html" onclick="abrirPopUp();"><img src="./assets/cards img/grécia.png" alt="Grécia"></a></li>
-                <li><a href="./cards/egito.html" onclick="abrirPopUp();"><img src="./assets/cards img/egito.png" alt="Egito"></a></li>
-                <li><a href="./cards/holanda.html" onclick="abrirPopUp();"><img src="./assets/cards img/holanda.png" alt="Holanda"></a></li>
-                <li><a href="./cards/tokyo.html" onclick="abrirPopUp();"><img src="./assets/cards img/tokyo.png" alt="Tóquio"></a></li>
-                <li><a href="./cards/france.html" onclick="abrirPopUp();"><img src="./assets/cards img/france.png" alt="França"></a></li>
-                <li><a href="./cards/australia.html" onclick="abrirPopUp();"><img src="./assets/cards img/australia.png" alt="Austrália"></a></li>
+                <div class="firstline">
+                    <!-- CORÉIA DO SUL - 0 -->
+                    <li>
+                        <img src="./assets/cardsimg/south korea.png" alt="Coréia do Sul">
+                        <!-- esse button é o botão pra abrir o modal -->
+                        <button onclick="showModal()"><img src="./assets/images/lupa 1.png" alt="Coréia do Sul"></button>
+                        <div class="modal" id="modal">
+                            <div class="modal-content">
+                                <!-- span é o botão de fechar o modal-->
+                                <span onclick="hideModal()">&times;</span>
+                                <p style="font-size: 15px; color: #121D83; padding: 10px;">
+                                    A Coreia do Sul é um país repleto de destinos fascinantes, que oferecem uma <br>
+                                    mistura única de história,cultura, natureza deslumbrante e arquitetura <br>
+                                    moderna. Aqui está um breve resumo com alguns dos principais pontos turísticos <br>
+                                    da Coreia do Sul:
+                                </p>
+                                <p style="font-size: 15px; color: black; padding: 20px;">
+                                    1. Palácio Gyeongbokgung - Localizado em Seul, é o maior e mais famoso palácio <br> 
+                                    da Coreia, oferecendo uma visão da arquitetura tradicional coreana. <br>
+                                    2. Templo Bulguksa - Situado em Gyeongju, é um dos principais templos budistas <br> 
+                                    da Coreia, com belas esculturas e uma atmosfera espiritual encantadora. <br>
+                                    3. Ilha de Jeju - Um destino paradisíaco no sul do país, conhecido por suas <br> 
+                                    paisagens vulcânicas, praias de areia branca, cachoeiras e a famosa estátua <br> dos Três Deuses. <br>
+                                    4. DMZ (Zona Desmilitarizada) - A fronteira entre a Coreia do Sul e a Coreia do <br> 
+                                    Norte é um destino turístico único, permitindo que os visitantes entendam <br> melhor a história e as tensões da península coreana. <br>
+                                    5. Palácio Changdeokgung - Outro palácio em Seul, é um Patrimônio Mundial da  <br>
+                                    UNESCO, conhecido por seus belos jardins secretos e arquitetura impressionante. <br>
+                                </p>
+                                <p style="font-size: 15px; color: #121D83;">
+                                    Esses são apenas alguns dos muitos pontos turísticos incríveis que a Coreia do Sul<br>
+                                    tem a oferecer. O país é repleto de maravilhas culturais e naturais que<br>
+                                    certamente encantarão os visitantes.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- ITÁLIA - 1 -->
+                    <li>
+                        <img src="./assets/cardsimg/italy.png" alt="Itália">
+                        <button onclick="showModal1()"><img src="./assets/images/lupa 1.png" alt="Itália"></button>
+                        <div class="modal1" id="modal1">
+                            <div class="modal-content1">
+                                <span onclick="hideModal1()">&times;</span>
+                                <p style="font-size: 15px; color: #121D83; padding: 10px;">
+                                    A Itália é um país repleto de rica história, arte deslumbrante, paisagens <br> 
+                                    deslumbrantes e uma deliciosa gastronomia. Aqui está um breve resumo <br> 
+                                    destacando alguns pontos turísticos populares na Itália:          
+                                </p>
+                                <p style="font-size: 15px; color: black; padding: 20px;">
+                                    1. Roma: A capital da Itália abriga o icônico Coliseu, o Fórum Romano, o Vaticano <br> 
+                                    com a Basílica de São Pedro e a Capela Sistina, além de inúmeras outras <br> 
+                                    ruínas antigas e monumentos históricos. <br>
+                                    2. Florença: Conhecida como o berço do Renascimento, Florença é lar de obras <br> 
+                                    de arte famosas como o David de Michelangelo e a cúpula da Catedral de <br> 
+                                    Santa Maria del Fiore. A cidade também abriga a Galeria Uffizi, que exibe uma <br> 
+                                    vasta coleção de arte renascentista. <br>
+                                    3. Veneza: Uma cidade única construída sobre a água, Veneza é famosa por seus <br> 
+                                    canais românticos, como o Grande Canal, e a praça principal, a Piazza San <br> 
+                                    Marco, com a impressionante Basílica de São Marcos e o Palácio Ducal. <br>
+                                    4. Costa Amalfitana: Localizada na região da Campânia, a costa amalfitana é um <br> 
+                                    trecho deslumbrante do litoral com encantadoras cidades costeiras, como <br> 
+                                    Positano, Amalfi e Ravello, rodeadas por penhascos íngremes e águas cristalinas. <br>
+                                    5. Pompéia: Uma cidade romana soterrada pela erupção do Monte Vesúvio em 79 <br> 
+                                    d.C., Pompéia é um sítio arqueológico fascinante, onde você pode explorar <br> 
+                                    ruínas incrivelmente preservadas, como casas, lojas, teatros e banhos.
+                                </p>
+                                <p style="font-size: 15px; color: #121D83;">
+                                    Esses são apenas alguns dos muitos pontos turísticos incríveis que a Itália tem a <br> 
+                                    oferecer. Cada região do país tem sua própria personalidade e atrações únicas, <br> 
+                                    tornando a Itália um destino verdadeiramente cativante para os amantes de viagens.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- NORUEGA - 2 -->
+                    <li>
+                        <img src="./assets/cardsimg/norway.png" alt="Noruega">
+                        <button onclick="showModal2()"><img src="./assets/images/lupa 1.png" alt="Noruega"></button>
+                        <div class="modal2" id="modal2">
+                            <div class="modal-content2">
+                                <span onclick="hideModal2()">&times;</span>
+                                <p style="font-size: 15px; color: #121D83; padding: 10px;">
+                                    A Noruega é um país conhecido por sua beleza natural deslumbrante, com <br> 
+                                    paisagens de tirar o fôlego. Aqui está um breve resumo com alguns dos principais <br> 
+                                    pontos turísticos da Noruega:
+                                </p>
+                                <p style="font-size: 15px; color: black; padding: 20px;">
+                                    1. Fiorde de Geiranger: Localizado na região dos fiordes noruegueses, o Fiorde <br> 
+                                    de Geiranger é um Patrimônio Mundial da UNESCO, com suas montanhas <br> 
+                                    majestosas, cachoeiras imponentes e águas cristalinas. <br>
+                                    2. Bergen: A cidade de Bergen é uma das mais belas da Noruega, com suas casas <br> 
+                                    coloridas de madeira, o famoso Mercado de Peixes e o funicular Floibanen, <br> 
+                                    que oferece vistas panorâmicas deslumbrantes da cidade e das montanhas ao redor. <br>
+                                    3. Tromsø: Situada no norte do país, Tromsø é conhecida como a "Capital do <br> 
+                                    Ártico". É um excelente ponto para avistar a Aurora Boreal e também abriga a <br> 
+                                    Catedral do Ártico e o Museu Polaria. <br>
+                                    4. Trondheim: Antiga capital da Noruega, Trondheim é famosa pela Catedral de <br> 
+                                    Nidaros, um importante local de peregrinação, e pela encantadora área <br> 
+                                    portuária de Bryggen. <br>
+                                    5. Oslo: A capital norueguesa é um destino imperdível, com atrações como o <br> 
+                                    Museu do Navio Viking, o Museu Munch (que abriga a famosa pintura "O Grito") <br> 
+                                    e o moderno edifício da Ópera. <br>
+                                </p>
+                                <p style="font-size: 15px; color: #121D83;">
+                                    Esses são apenas alguns dos pontos turísticos notáveis da Noruega. O país oferece <br> 
+                                    uma infinidade de belezas naturais, cidades encantadoras e experiências únicas <br>
+                                    que certamente encantarão os visitantes.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="secondline">
+                    <!-- GRÉCIA - 3 -->
+                    <li>
+                        <img src="./assets/cardsimg/grécia.png" alt="Grécia">
+                        <button onclick="showModal3()"><img src="./assets/images/lupa 1.png" alt="Grécia"></button>
+                        <div class="modal3" id="modal3">
+                            <div class="modal-content3">
+                                <span onclick="hideModal3()">&times;</span>
+                                <p style="font-size: 15px; color: #121D83; padding: 10px;">
+                                    A Grécia, berço da civilização ocidental, é um destino incrível repleto de <br>
+                                    história, cultura e belezas naturais deslumbrantes. Aqui está um breve resumo <br>
+                                    com alguns dos pontos turísticos mais famosos da Grécia:
+                                </p>
+                                <p style="font-size: 15px; color: black; padding: 20px;">
+                                    1. Acrópole de Atenas: Localizada em Atenas, a Acrópole é um complexo de <br> 
+                                    construções antigas, incluindo o icônico Partenon. É um símbolo da antiga <br> 
+                                    civilização grega e oferece vistas panorâmicas da cidade. <br>
+                                    2. Santorini: Uma das ilhas gregas mais famosas, Santorini é conhecida por suas <br> 
+                                    casinhas brancas, cúpulas azuis e deslumbrantes vistas do Mar Egeu. O pôr do <br> 
+                                    sol em Oia é uma experiência imperdível. <br>
+                                    3. Meteora: Situada no centro da Grécia, a região de Meteora é famosa por seus <br> 
+                                    mosteiros construídos no topo de enormes formações rochosas. A paisagem <br> 
+                                    única e a aura espiritual tornam Meteora um lugar especial. <br>
+                                    4. Delfos: Delfos era um importante centro religioso e de oráculos na Grécia <br> 
+                                    Antiga. Hoje, os visitantes podem explorar as ruínas do Templo de Apolo, o <br> 
+                                    Teatro de Delfos e o Museu Arqueológico, que abriga valiosas esculturas e artefatos. <br>
+                                    5. Olímpia: Olímpia foi o local onde ocorreram os primeiros Jogos Olímpicos na <br> 
+                                    antiguidade. Os viajantes podem visitar as ruínas do antigo estádio, o Templo <br> 
+                                    de Zeus e o Museu Arqueológico de Olímpia. <br>
+                                </p>
+                                <p style="font-size: 15px; color: #121D83;">
+                                    Esses são apenas alguns dos muitos destinos turísticos fascinantes que a Grécia tem a <br> 
+                                    oferecer. Cada lugar possui sua própria singularidade e promete uma experiência memorável <br> 
+                                    para os viajantes que exploram esse país tão rico em cultura e paisagens magníficas.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- EGITO - 4 -->
+                    <li>
+                        <img src="./assets/cardsimg/egito.png" alt="Egito">
+                        <button onclick="showModal4()"><img src="./assets/images/lupa 1.png" alt="Egito"></button>
+                        <div class="modal4" id="modal4">
+                            <div class="modal-content4">
+                                <span onclick="hideModal4()">&times;</span>
+                                <p style="font-size: 15px; color: #121D83; padding: 10px;">
+                                    O Egito é um país repleto de rica história, cultura fascinante e tesouros arqueológicos. <br> 
+                                    Aqui está um breve resumo dos pontos turísticos mais famosos do Egito:
+                                </p>
+                                <p style="font-size: 15px; color: black; padding: 20px;">
+                                    1. Pirâmides de Gizé: Localizadas nos arredores do Cairo, as Pirâmides de Gizé <br> 
+                                    são um dos marcos mais icônicos do mundo antigo. A Grande Pirâmide de <br> 
+                                    Quéops, a Pirâmide de Quéfren e a Pirâmide de Miquerinos são impressionantes <br> 
+                                    testemunhos da grandiosidade do antigo Egito. <br>
+                                    2. Esfinge de Gizé: Adjacente às pirâmides, encontra-se a majestosa Esfinge de <br> 
+                                    Gizé, uma estátua colossal com a cabeça de um faraó e o corpo de um leão. <br> 
+                                    Ela é uma das obras de arte mais reconhecidas e enigmáticas do Egito. <br>
+                                    3. Templo de Karnak: Situado em Luxor, o Templo de Karnak é um complexo de <br> 
+                                    templos antigos que remonta a cerca de 4.000 anos. É famoso por suas <br> 
+                                    enormes colunas hipostilas, obeliscos e relevos impressionantes. <br>
+                                    4. Vale dos Reis: Localizado perto de Luxor, o Vale dos Reis abriga tumbas <br> 
+                                    deslumbrantes dos faraós do Novo Reino, como Tutancâmon e Ramsés II. É <br> 
+                                    uma maravilha arqueológica que revela a crença egípcia na vida após a morte. <br>
+                                    5. Rio Nilo: O Rio Nilo é a espinha dorsal do Egito e um local essencial para <br> 
+                                    explorar o país. Cruzeiros fluviais pelo Nilo oferecem vistas panorâmicas de <br> 
+                                    antigas cidades, aldeias pitorescas e paisagens deslumbrantes. <br>
+                                </p>
+                                <p style="font-size: 15px; color: #121D83;">
+                                    Esses são apenas alguns dos muitos pontos turísticos fascinantes que o Egito tem a <br> 
+                                    oferecer. Cada um deles é uma janela para a rica herança e civilização do antigo <br> 
+                                    Egito, proporcionando aos visitantes uma experiência única e memorável.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- HOLANDA - 5 -->
+                    <li>
+                        <img src="./assets/cardsimg/holanda.png" alt="Holanda">
+                        <button onclick="showModal5()"><img src="./assets/images/lupa 1.png" alt="Holanda"></button>
+                        <div class="modal5" id="modal5">
+                            <div class="modal-content5">
+                                <span onclick="hideModal5()">&times;</span>
+                                <p style="font-size: 15px; color: #121D83; padding: 10px;">
+                                    A Holanda é um país conhecido por sua beleza cênica, cultura rica e arquitetura <br> 
+                                    única. Aqui está um breve resumo dos pontos turísticos mais famosos da Holanda:
+                                </p>
+                                <p style="font-size: 15px; color: black; padding: 20px;">
+                                    1. Amsterdã: A capital da Holanda oferece uma mistura encantadora de canais <br> 
+                                    pitorescos, arquitetura histórica, museus de renome mundial (como o <br> 
+                                    Rijksmuseum e o Museu Van Gogh) e uma vibrante cena cultural. <br>
+                                    2. Moinhos de vento de Kinderdijk: Localizado perto de Roterdã, o Patrimônio <br> 
+                                    Mundial da UNESCO possui 19 moinhos de vento icônicos, construídos no <br> 
+                                    século XVIII, que são um símbolo da engenhosidade holandesa na gestão da água. <br>
+                                    3. Keukenhof: É o famoso Jardim das Tulipas, situado perto de Lisse. Com uma <br> 
+                                    área de cerca de 79 acres, oferece uma explosão de cores deslumbrantes na <br> 
+                                    primavera, com milhões de tulipas e outras flores em exibição. <br>
+                                    4. Haia: Como sede do governo holandês e da Corte Internacional de Justiça, <br> 
+                                    Haia é uma cidade elegante, repleta de palácios, como o Binnenhof, belas <br> 
+                                    praias, como Scheveningen, e museus interessantes, como o Mauritshuis, que <br> 
+                                    abriga a famosa pintura "Moça com Brinco de Pérola". <br>
+                                    5. Rotterdam: A segunda maior cidade da Holanda é conhecida por sua <br> 
+                                    arquitetura moderna e inovadora. Destacam-se a Torre Euromast, o famoso <br> 
+                                    mercado Markthal, o Museu Boijmans Van Beuningen e o moderno e vibrante <br> 
+                                    bairro de Kop van Zuid. <br>
+                                </p>
+                                <p style="font-size: 15px; color: #121D83;">
+                                    Esses são apenas alguns dos pontos turísticos notáveis ​​da Holanda. O país oferece <br> 
+                                    muito mais, desde praias deslumbrantes até encantadoras cidades históricas. <br> 
+                                    Cada destino possui sua própria beleza e história cativantes, tornando a Holanda <br> 
+                                    um destino imperdível para os amantes de viagens.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="thirdline">
+                    <!-- JAPÃO - 6 -->
+                    <li>
+                        <img src="./assets/cardsimg/tokyo.png" alt="Japão">
+                        <button onclick="showModal6()"><img src="./assets/images/lupa 1.png" alt="Japão"></button>
+                        <div class="modal6" id="modal6">
+                            <div class="modal-content6">
+                                <span onclick="hideModal6()">&times;</span>
+                                <p style="font-size: 15px; color: #121D83; padding: 5px;"> 
+                                    O Japão é um país fascinante que combina uma rica história com uma cultura <br> 
+                                    vibrante e paisagens deslumbrantes. Aqui está um breve resumo de alguns dos <br> 
+                                    pontos turísticos mais populares no Japão:
+                                </p>
+                                <p style="font-size: 15px; color: black; padding: 10px;">
+                                    1. Tokyo: A capital do Japão é uma metrópole cosmopolita que oferece uma <br> 
+                                    mistura única de tradição e modernidade. Explore bairros movimentados, <br> 
+                                    como Shibuya e Shinjuku, visite templos históricos, como o Templo Senso-ji <br>
+                                    em Asakusa, e maravilhe-se com a arquitetura futurista da Torre de Tóquio. <br>
+                                    2. Hiroshima: Esta cidade histórica ficou conhecida como o local onde a primeira <br> 
+                                    bomba atômica foi lançada durante a Segunda Guerra Mundial. Hoje, o Parque <br> 
+                                    Memorial da Paz de Hiroshima é uma visita obrigatória, juntamente com o <br> 
+                                    Museu Memorial da Paz de Hiroshima. <br>
+                                    3. Monte Fuji: O Monte Fuji é o cartão-postal mais icônico do Japão. Você pode <br> 
+                                    admirar essa montanha sagrada de diferentes pontos de vista e, para os mais <br> 
+                                    aventureiros, escalar o Fuji-San é uma experiência inesquecível. <br>
+                                    4. Osaka: Conhecida por sua vibrante cena gastronômica e seu famoso castelo, <br> 
+                                    Osaka é uma cidade cheia de energia. Explore o movimentado bairro de <br> 
+                                    Dotonbori, experimente a culinária local deliciosa e divirta-se nos parques <br> 
+                                    temáticos, como o Universal Studios Japan. <br>
+                                    5. Quioto: Conhecida como a antiga capital do Japão, Quioto é o lar de inúmeros <br> 
+                                    templos, santuários e jardins tradicionais. Visite o icônico Templo de Kinkaku-ji <br> 
+                                    (Pavilhão Dourado), o Templo de Fushimi Inari, com seus famosos torii vermelhos, e o belo Templo de Kiyomizu-dera. <br>
+                                </p>
+                                <p style="font-size: 15px; color: #121D83;">
+                                    Esses são apenas alguns dos muitos pontos turísticos fascinantes que o Japão tem <br> 
+                                    a oferecer. Cada região do Japão possui sua própria atmosfera única e a promessa <br> 
+                                    de uma experiência inesquecível.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- FRANÇA - 7 -->
+                    <li>
+                        <img src="./assets/cardsimg/france.png" alt="França">
+                        <button onclick="showModal7()"><img src="./assets/images/lupa 1.png" alt="França"></button>
+                        <div class="modal7" id="modal7">
+                            <div class="modal-content7">
+                                <span onclick="hideModal7()">&times;</span>
+                                <p style="font-size: 15px; color: #121D83; padding: 10px;">
+                                    A França é um país conhecido por sua rica história, cultura vibrante e paisagens <br> 
+                                    deslumbrantes. Aqui está um breve resumo com alguns dos principais pontos <br> 
+                                    turísticos da França:
+                                </p>
+                                <p style="font-size: 15px; color: black; padding: 30px;">
+                                    1. Torre Eiffel (Paris): Ícone emblemático da França, a Torre Eiffel oferece vistas <br> 
+                                    panorâmicas incríveis de Paris a partir de seus mirantes. <br>
+                                    2. Museu do Louvre (Paris): O Louvre é um dos maiores e mais famosos museus <br> 
+                                    do mundo, abrigando obras de arte valiosas, incluindo a Mona Lisa e a Vênus de Milo. <br>
+                                    3. Catedral de Notre-Dame (Paris): Esta magnífica catedral gótica é uma obra-prima <br> 
+                                    arquitetônica e um importante marco histórico. <br>
+                                    4. Palácio de Versalhes (Versalhes): Localizado nos arredores de Paris, o Palácio <br> 
+                                    de Versalhes é um impressionante exemplo da arquitetura palaciana e foi <br> 
+                                    residência dos reis franceses. <br>
+                                    5. Riviera Francesa (Nice, Cannes, Saint-Tropez): Com praias deslumbrantes, <br> 
+                                    luxuosos resorts e um clima ensolarado, a Riviera Francesa é um destino <br> 
+                                    popular para turistas em busca de sol e glamour. <br>
+                                </p>
+                                <p style="font-size: 15px; color: #121D83;">
+                                    Esses são apenas alguns dos muitos pontos turísticos maravilhosos que a França <br> 
+                                    tem a oferecer. Cada região do país possui suas próprias atrações únicas, desde <br> 
+                                    cidades encantadoras até paisagens deslumbrantes, garantindo uma experiência <br> 
+                                    rica e diversificada para os visitantes.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- AUSTRÁLIA - 8 -->
+                    <li>
+                        <img src="./assets/cardsimg/australia.png" alt="Austrália">
+                        <button onclick="showModal8()"><img src="./assets/images/lupa 1.png" alt="Austrália"></button>
+                        <div class="modal8" id="modal8">
+                            <div class="modal-content8">
+                                <span onclick="hideModal8()">&times;</span>
+                                <p style="font-size: 15px; color: #121D83; padding: 10px;">
+                                    A Austrália é um país vasto e diversificado, repleto de pontos turísticos <br> 
+                                    deslumbrantes. Aqui está um breve resumo com alguns dos principais pontos turísticos da Austrália:
+                                </p>
+                                <p style="font-size: 15px; color: black; padding: 20px;">
+                                    1. Sydney Opera House: Um ícone mundialmente famoso, localizado em Sydney, <br> 
+                                    com sua arquitetura única e impressionante localização à beira-mar. <br>
+                                    2. Grande Barreira de Corais: Considerada uma das maravilhas naturais do <br> 
+                                    mundo, é o maior recife de coral do planeta, com uma abundante vida <br> 
+                                    marinha. É possível fazer mergulho, snorkeling e passeios de barco para <br> 
+                                    explorar essa beleza. <br>
+                                    3. Uluru (Ayers Rock): Uma imponente formação rochosa no centro da Austrália, <br> 
+                                    conhecida por suas cores vibrantes que mudam com a luz do sol. É um local <br> 
+                                    sagrado para os povos indígenas australianos. <br>
+                                    4. Great Ocean Road: Uma estrada costeira espetacular que se estende por 243 km <br> 
+                                    ao longo do litoral sul da Austrália, oferecendo vistas deslumbrantes <br> 
+                                    de penhascos, praias, formações rochosas e a famosa formação conhecida como <br> 
+                                    os Doze Apóstolos. <br>
+                                    5. Parque Nacional Kakadu: Localizado no Território do Norte, é o maior parque <br> 
+                                    nacional da Austrália, conhecido por sua rica biodiversidade, paisagens <br> 
+                                    deslumbrantes, pinturas rupestres aborígines e vida selvagem única, como <br> 
+                                    crocodilos e pássaros exóticos. <br>
+                                </p>
+                                <p style="font-size: 15px; color: #121D83;">
+                                    Esses são apenas alguns dos muitos pontos turísticos incríveis que a Austrália tem <br> 
+                                    a oferecer. Cada região do país possui suas próprias atrações únicas, <br> 
+                                    proporcionando aos visitantes uma experiência inesquecível.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </div>
             </ul>
         </div> 
-        <div>
-            <h2>Depoimentos</h2>
-            <p>Descubra o que nossos usuários têm a dizer sobre sua experiência com o nosso site!</p>
-        </div>
+
+        <!-- <div class="depoimentos">
+            <h3>Depoimentos</h3>
+            <p class="line">_____________</p>
+            <p class="description">Descubra o que nossos usuários têm a dizer sobre sua experiência com o nosso site!</p>
+        </div> -->
 
         <div class="jimin">
-            <img src="./images/jimin card.png" alt="Cadastre-se">
                 <div class="cadastre"><p>Cadastre-se agora e desbloqueie um mundo de inspiração, dicas especializadas e recursos exclusivos.</p></div>
                 <a href=""><button>Cadastre-se</button></a>
                 <p>A próxima aventura está apenas a um clique de distância!</p>
+        </div>
     </main>
 
     <!-- rodapé -->
-    <footer>
-        <div class="logorodape"><img src="./images/logo.svg" alt="Logo Sightseer's Guide" width="300.79px" height="75px"></div>
+    <footer id="Contato">
+        <div class="logorodape"><img src="./assets/images/logo.svg" alt="Logo Sightseer's Guide" width="300.79px" height="75px"></div>
         <div class="rightsreserved"><p style="font-size: 15px;">© 2023 Sightseer’s Guide. All Rights Reserved.</p></div>
         <div class="socialmedia"><p style="font-size: 20px;">Siga em nossas redes sociais</p></div>
         <ul>
-            <li><a href=""><img src="./images/facebooklogo.png" alt="Facebook" width="71px" height="71px"></a></li>
-            <li><a href=""><img src="./images/instagramlogo.png" alt="Instagram" width="71px" height="71px"></a></li>
-            <li><a href=""><img src="./images/twitterlogo.png" alt="Twitter" width="72.94px" height="60px"></a></li>
+            <li><a href=""><img src="./assets/images/facebooklogo.png" alt="Facebook" width="71px" height="71px"></a></li>
+            <li><a href=""><img src="./assets/images/instagramlogo.png" alt="Instagram" width="71px" height="71px"></a></li>
+            <li><a href=""><img src="./assets/images/twitterlogo.png" alt="Twitter" width="72.94px" height="60px"></a></li>
         </ul>
         <ul style="font-size: 16px;">
             <li><a href="">Encontre um guia</a></li>
@@ -94,7 +454,8 @@
         </ul>
         <a href=""><button>Contate-nos</button></a>
     </footer>
-</body>
 
+    <script src="./script.js"></script>
+</body>
 
 </html>         

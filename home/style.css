@@ -33,7 +33,7 @@ nav ul{
 } 
 
 .menu a:hover{
-    color: #FFF;
+    color: purple;
 }
 
 .menu a:visited{
@@ -46,13 +46,83 @@ nav img{
     align-items: center;
 }
 
+header button{
+    display: block;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.bkglogin{
+    width: 376px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #121D83;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+    height: 310px;
+}
+
+/* login icon */
+.closelogin{
+    color: #0019FF;
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50px;
+}
+
+.closelogin:hover{
+    background-color: rgba(80, 98, 255, 0.5);
+}
+.modal0{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content0{
+    color: #FFF;
+    font-size: 15px;
+    background-color: #FFF;
+    padding: 16px 30px;
+    width: 500px;
+    height: 600px;
+    border-radius: 1rem;
+}
+
+.show-modal0{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* finish login icon */
+
 .container{
     position: relative;
     left: 0;
     top: 0;
     width: 100%;
     height: 100vh;
-    animation: animate 16s ease-in-out infinite;
+    animation: animate 8s ease-in-out infinite;
     background-size: cover;
     z-index: 1;
 }
@@ -94,16 +164,53 @@ nav img{
     color: #191970;
     font-size: 33px;
     text-align: center;
+    padding-bottom: 40px;
 }
 
-.details form{
-    text-align: center;
-    width: 650px;
-    height: 58px;
-    flex-shrink: 0;
-    border-radius: 50px;
-    background: #FFF;
-    box-shadow: 0px 0px 10px 0px #0019FF inset;
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pin{
+    display: inline-block;
+    background-color: #FFF;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button[type="submit"]{
+    display: inline-block;
+    background-color: #FFF;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.input-container{
+    width: 50%;
+    color:rgba(72, 91, 255, 0.70);
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-right: 10px;
+    background-color: #FFF;
+    box-shadow: box-shadow 0px 0px 10px 0px #0019FF;
+}
+
+input[type="text"]{
+    font-size: 21px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: transparent;
 }
 
 .message {
@@ -140,15 +247,396 @@ nav img{
 }
 
 .cards p {
-    margin: 0%;
+    margin: 0px;
     font-size: 30px;
     color: #535353;
     text-align: center;
+    padding-bottom: 50px;
+}
+
+.cards li{
+    margin: 0px;
+}
+
+.cards ul button{
+    display: block;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #FFF;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* as especificações do .modal é da caixa do modal */
+.modal{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* fundo cinza atrás da modal(quando ativada): */
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    /* deixa a transição mais suave: */
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+/* as especificações .modal-content é do conteúdo que vai dentro do modal */
+.modal-content{
+    font-size: 15px;
+    background-image: url(./assets/images/coréia.png);
+    /* os 16px dão margem interior em cima e embaixo, e os 24px nas laterais: */
+    padding: 16px 24px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+/* botão de fechar: */
+span{
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50px;
+}
+
+span:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* ITÁLIA - 1 */
+
+.modal1{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content1{
+    font-size: 15px;
+    background-image: url(./assets/images/italia.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal1{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* NORUEGA - 2 */
+.modal2{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content2{
+    font-size: 15px;
+    background-image: url(./assets/images/noruega.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal2{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* GRÉCIA - 3 */
+.modal3{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content3{
+    font-size: 15px;
+    background-image: url(./assets/images/grécia.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal3{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* EGITO - 4 */
+.modal4{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content4{
+    font-size: 15px;
+    background-image: url(./assets/images/egito.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal4{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* HOLANDA - 5 */
+.modal5{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content5{
+    font-size: 15px;
+    background-image: url(./assets/images/holanda.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal5{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* JAPÃO - 6 */
+.modal6{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content6{
+    font-size: 15px;
+    background-image: url(./assets/images/japão.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal6{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* FRANÇA - 7 */
+.modal7{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content7{
+    font-size: 15px;
+    background-image: url(./assets/images/frança.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal7{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* AUSTRÁLIA - 8 */
+.modal8{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content8{
+    font-size: 15px;
+    background-image: url(./assets/images/austrália.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal8{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* FINISH CARDS CONTENT*/
+
+.firstline{
+    display: flex;
+    justify-content: space-around;
+}
+
+.secondline{
+    display: flex;
+    justify-content: space-around;
+}
+
+.thirdline{
+    display: flex;
+    justify-content: space-around;
+}
+
+.depoimentos{
+    font-size: 44.77px;
+    text-align: center;
+    background-color: #85B0BD;
+    color: white;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 73px;
+    padding-bottom: 600px;
+}
+
+.line{
+    color: #D6FFFF;
+    font-size: 60px;
+}
+
+.description{
+    color: #CDEAFF;
+    text-align: center;
+    font-size: 30px;
+    font-family: Trebuchet MS;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    padding-top: 20px;
 }
 
 .jimin {
-    position: relative;
-    text-align: center;
+    background-image: url(./assets/images/jimin\ card.png);
+    background-position: center;
+    width: 870px;
+    height: 587.6px;
+    flex-shrink: 0;
+    align-self: center;
 }
   
 .texto-sobre-imagem {

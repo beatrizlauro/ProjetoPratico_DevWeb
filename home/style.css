@@ -770,6 +770,8 @@ footer p{
     margin-top: 30px;
     margin-left: 50px;
     font-size: 15px;
+    text-align: left;
+    margin: 2.5%;
 }
 
 .socialmedia{
@@ -787,6 +789,8 @@ footer p{
 .links{
     color: white;
     display: inline-block;
+    text-align: justify;
+    margin: 2.5%;
 }
 
 .links a:hover{
@@ -797,9 +801,19 @@ footer p{
     color:#FFF;
 }
 
+.links2 a:link{
+    color: #FFF;
+}
+
+.links2 li{
+    color: #FFF;
+}
+
 .links2{
     color: white;
     display: inline-block;
+    text-align: justify;
+    margin: 5%;
 }
 
 .links2 a:hover{

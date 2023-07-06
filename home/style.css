@@ -745,9 +745,35 @@ footer{
     line-height: 110%;
 }
 
+.links{
+    color: white;
+    display: inline-block;
+}
+
+.links a:hover{
+    color: #FFF;
+}
+
+.links a:visited{
+    color:#FFF;
+}
+
+.links2{
+    color: white;
+    display: inline-block;
+}
+
+.links2 a:hover{
+    color: #FFF;
+}
+
+.links2 a:visited{
+    color:#FFF;
+}
+
 .botao{
-    width: 150px;
-    height: 47px;
+    width: 160px;
+    height: 45px;
     justify-content: center;
     align-items: center;
     background: #A4D9FF;

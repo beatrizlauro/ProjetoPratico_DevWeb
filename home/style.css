@@ -730,3 +730,16 @@ footer{
     font-weight: 700;
     line-height: 110%;
 }
+
+.botao{
+    width: 150px;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    background: #A4D9FF;
+    border-radius: 15px;
+    color: #121D83;
+    text-align: center;
+    display: flex;
+    margin-left: 36rem;
+  }

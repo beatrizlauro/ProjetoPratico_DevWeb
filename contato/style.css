@@ -1,13 +1,15 @@
 *,
 *::after,
 *::before {
-    padding: 0;
-    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    margin: 0%;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 18px;
     color: rgba(0, 0, 0, 0.76);
 }
@@ -48,10 +50,6 @@ a {
     color:rgba(0, 0, 0, 0.76);
 }
 
-a:hover {
-    background-color:rgb(234, 233, 233);
-}
-
 .login{
         padding: 0.5rem 1rem;
         background-color: rgba(40, 108, 130, 1);
@@ -60,9 +58,6 @@ a:hover {
         margin-left: 5rem;
         margin-right: 3rem;
         border-radius: 13px;
-}
-.login:hover {
-    background-color:rgba(205, 234, 255, 1);
 }
 
 .msg{
@@ -122,7 +117,7 @@ label, .txtmsg{
     margin-left: 2rem;
 }
 
-button{
+.enviar{
     width: 70px;
     height: 30px;  
     margin-top: 1rem;
@@ -137,3 +132,135 @@ input, textarea,button {
   border: none;
   background-color: whitesmoke;
 }
+
+/* login icon */
+
+.contentlogin{
+    display: flex;
+    padding: 5px;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin: 20px;
+}
+
+.logoimglogin{
+    margin-top: 30px;
+}
+
+.closelogin{
+    font-size: 30px;
+    color: #0019FF;
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50px;
+}
+
+.closelogin:hover{
+    background-color: rgba(80, 98, 255, 0.5);
+}
+
+.modal0{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content0{
+    color: #FFF;
+    font-size: 15px;
+    background-color: #FFF;
+    padding: 16px 30px;
+    width: 500px;
+    height: 550px;
+    border-radius: 1rem;
+}
+
+.show-modal0{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+.inputs{
+    width: 293px;
+    height: 40px;
+    border-radius: 50px;
+    background: #A4D9FF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+    border: none;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.title{
+    margin-left: 45px;
+}
+
+.loginbutton{
+    color: #FFF;
+    width: 102px;
+    height: 35px;
+    border-radius: 50px;
+    background: #0019FF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.40);
+    margin-left: 130px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bkglogin{
+    width: 376px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #121D83;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+    height: 310px;
+    padding-top: 20px;
+}
+
+input[type="email"]::placeholder {
+    color: #FFF;
+}
+
+input[type="password"]::placeholder {
+    color: #FFF;
+}
+
+.forgot{
+    font-size: 12px;
+    margin-left: 50px;
+    text-decoration: underline;
+}
+
+header button{
+    display: block;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* finish login icon */

@@ -12,14 +12,36 @@
 
     <header>  <!-- cabeçalho do site/barra de navegação -->
         <div class="logo">
-           <a href="/home/index.html" class="imglink"><img src="/contato/img/Logo.svg" alt=""></a>
+          <a href="/home/index.html" class="imglink"><img src="/contato/img/Logo.svg" alt=""></a>
         </div>
         <ul>
             <li><a href="/quem somos nós/quem somos nós.html">Quem Somos Nós</a></li>
             <li><a href="/home/index.html">Destinos</a></li>
             <li><a href="">Contato</a></li>
+            <li class="botaologin">
+              <button onclick="showModal0()"><img src="/home/assets/images/login.svg" alt="Login"></button>
+              <div class="modal0" id="modal0">
+                  <div class="modal-content0">
+                      <span class="closelogin" onclick="hideModal0()">&times;</span>
+                      <div class="contentlogin">
+                          <img src="/home/assets/images/logologin.png" alt="Logo Sightseer's Guide" class="logoimglogin" style>
+                          <div class="bkglogin">
+                              <div class="campo">
+                                  <label for="ilogin" class="title">E-mail</label> <br>
+                                  <input type="email" name="login" id="ilogin" class="inputs" placeholder="Insira seu e-mail" required>
+                              </div>
+                              <div class="campo">
+                                  <label for="isenha" class="title">Senha</label> <br>
+                                  <input type="password" name="senha" id="isenha" class="inputs" placeholder="Sua senha" required> <br>
+                              </div>
+                              <a href="/videos/godzilla.html" class="forgot" style="color: white; text-decoration: underline;">Esqueceu a senha?</a><br>
+                              <input type="submit" value="Login" class="loginbutton">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </li>
         </ul>
-        <a href="" class="login">Contato</a>
 </header>
 
 <main>
@@ -45,11 +67,11 @@
             <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
           </div>
         
-          <button type="submit">Enviar</button>
+          <button type="submit" class="enviar">Enviar</button>
         </form>
   </div>
 </main>
-
+<script src="./script.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,30 @@
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    margin: 0%;
+    box-sizing: border-box;
+    
+    background-color: #00063C;
+}
+
+.logoimage{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+video{
+    width: 879.82px;
+    height: 514px;
+    display: flex;
+    margin-top: 60px;
+    margin-left: 330px;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    margin-left: 590px;
+    margin-top: 20px;
+}

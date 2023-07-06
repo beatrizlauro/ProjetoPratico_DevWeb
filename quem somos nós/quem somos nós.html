@@ -17,9 +17,31 @@
         <ul>
             <li><a href="/quem somos nós/quem somos nós.html">Quem Somos Nós</a></li>
             <li><a href="/home/index.html">Destinos</a></li>
-            <li><a href="#Contato">Contato</a></li>
+            <li><a href="/contato/contato.html">Contato</a></li>
+            <li class="botaologin">
+                <button onclick="showModal0()"><img src="/home/assets/images/login.svg" alt="Login"></button>
+                <div class="modal0" id="modal0">
+                    <div class="modal-content0">
+                        <span class="closelogin" onclick="hideModal0()">&times;</span>
+                        <div class="contentlogin">
+                            <img src="/home/assets/images/logologin.png" alt="Logo Sightseer's Guide" class="logoimglogin">
+                            <div class="bkglogin">
+                                <div class="campo">
+                                    <label for="ilogin" class="title">E-mail</label> <br>
+                                    <input type="email" name="login" id="ilogin" class="inputs" placeholder="Insira seu e-mail" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="isenha" class="title">Senha</label> <br>
+                                    <input type="password" name="senha" id="isenha" class="inputs" placeholder="Sua senha" required> <br>
+                                </div>
+                                <a href="/videos/godzilla.html" class="forgot" style="color: white; text-decoration: underline;">Esqueceu a senha?</a><br>
+                                <input type="submit" value="Login" class="loginbutton">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
         </ul>
-     <a href="/contato/contato.html" class="login">Contato</a>
     </header>
 
     <main>
@@ -68,12 +90,13 @@
                 <p>
                     Então, o que você está esperando? Deixe-nos guiá-lo através dos segredos mais bem guardados, dos pontos turísticos imperdíveis e das experiências autênticas. A sua jornada começa aqui!</p></strong>
             </div>
-                <a href="" class="buttondown">Destinos</a>
+                <a href="/home/index.html" class="buttondown">Destinos</a>
         </div>
     </main>
+    <script src="./script.js"></script>
 
         <!--footer-->
-        <footer id="Contato">
+        <footer>
             <div class="logorodape"><img src="./assets/images/logo.svg" alt="Logo Sightseer's Guide" width="300.79px" height="75px"></div>
             <div class="rightsreserved"><p style="font-size: 15px;">© 2023 Sightseer’s Guide. All Rights Reserved.</p></div>
             <div class="socialmedia"><p style="font-size: 20px;">Siga em nossas redes sociais</p></div>

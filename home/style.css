@@ -758,8 +758,8 @@ footer{
 
 .rodapelogo{
     display: flex;
-    width: 300.787px;
-    height: 75px;
+    width: 320.787px;
+    height: 80px;
     flex-shrink: 0;
     margin-top: 30px;
     margin-left: 30px;
@@ -767,11 +767,11 @@ footer{
 
 footer p{
     color: #FFF;
-    margin-top: 30px;
-    margin-left: 50px;
-    font-size: 15px;
+    margin-top: 40px;
+    margin-left: 60px;
+    font-size: 16px;
     text-align: left;
-    margin: 2.5%;
+    margin: 3%;
 }
 
 .socialmedia{
@@ -784,13 +784,17 @@ footer p{
     display: flex;
     align-items: center;
     gap: 4rem;
+    margin-left: 3%;
 }
 
 .links{
     color: white;
     display: inline-block;
     text-align: justify;
+    margin-left: 100px;
     margin: 2.5%;
+    line-height: 110%;
+    align-items: center;
 }
 
 .links a:hover{
@@ -813,7 +817,8 @@ footer p{
     color: white;
     display: inline-block;
     text-align: justify;
-    margin: 5%;
+    margin-left: 100px;
+    margin: 4.5%;
 }
 
 .links2 a:hover{
@@ -825,15 +830,16 @@ footer p{
 }
 
 .botao{
-    width: 113px;
-    height: 25px;
+    width: 122px;
+    height: 28px;
     background: #A4D9FF;
-    border-radius: 50px;
+    border-radius: 55px;
     color: #121D83;
     justify-content: center;
     text-align: center;
     display: flex;
-    margin-left: 80px;
+    margin-left: 250px;
+    margin: 9%;
 }
 
 .links a:link{

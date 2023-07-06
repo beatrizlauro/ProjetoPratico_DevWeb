@@ -10,42 +10,45 @@
 
 <body>
     <!-- cabeçalho: -->
-    <header>
-            <div class="logoimage"><a href="./index.html"><img src="./assets/images/logo.svg" alt="logo sighteer's guide" width="203px" height="54px"></div>
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="/ProjetoPratico_DevWeb/quem somos nós/quem somos nós.html">Quem somos Nós</a></li>
-                        <li><a href="#Destinos">Destinos</a></li>
-                        <li><a href="#Contato">Contato</a></li>
-                        <!-- Botão de login -->
-                        <li class="botaologin">
-                            <button onclick="showModal0()"><img src="./assets/images/login.svg" alt="Login"></button>
-                            <div class="modal0" id="modal0">
-                                <div class="modal-content0">
-                                    <span class="closelogin" onclick="hideModal0()">&times;</span>
-                                <img src="./assets/images/logologin.png" alt="Logo Sightseer's Guide">
-                                <div class="bkglogin">
-                                    <div class="campo">
-                                        <label for="ilogin">E-mail</label> <br>
-                                        <input type="email" name="login" id="ilogin" class="inputs" placeholder="Insira seu e-mail" required>
+    <header id="Cabecalho">
+        <div class="logoimage"><a href="./index.html"><img src="./assets/images/logo.svg" alt="logo sighteer's guide" width="203px" height="54px"></div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="/quem somos nós/quem somos nós.html">Quem somos Nós</a></li>
+                    <li><a href="#Destinos">Destinos</a></li>
+                    <li><a href="#Contato">Contato</a></li>
+                    <!-- Botão de login -->
+                    <li class="botaologin">
+                        <button onclick="showModal0()"><img src="./assets/images/login.svg" alt="Login"></button>
+                        <div class="modal0" id="modal0">
+                            <div class="modal-content0">
+                                <span class="closelogin" onclick="hideModal0()">&times;</span>
+                                <div class="contentlogin">
+                                    <img src="./assets/images/logologin.png" alt="Logo Sightseer's Guide" class="logoimglogin">
+                                    <div class="bkglogin">
+                                        <div class="campo">
+                                            <label for="ilogin" class="title">E-mail</label> <br>
+                                            <input type="email" name="login" id="ilogin" class="inputs" placeholder="Insira seu e-mail" required>
+                                        </div>
+                                        <div class="campo">
+                                            <label for="isenha" class="title">Senha</label> <br>
+                                            <input type="password" name="senha" id="isenha" class="inputs" placeholder="Sua senha" required> <br>
+                                        </div>
+                                        <a href="/videos/godzilla.html" class="forgot">Esqueceu a senha?</a><br>
+                                        <input type="submit" value="Login" class="loginbutton">
                                     </div>
-                                    <div class="campo">
-                                        <label for="isenha">Senha</label> <br>
-                                        <input type="password" name="senha" id="isenha" class="inputs" placeholder="Sua senha" required> <br>
-                                    </div>
-                                    <input type="submit" value="Login" class="loginbutton">
-                                    <button>GOOGLE</button>
-                                </div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
+       <a href="#Cabecalho"><button class="botaocabecalho"><img src="./assets/images/seta 1.png" alt="Voltar ao Início" style="width: 15px; height: 15px;"></button></a>
        <div class="container">
             <div class="outer">
                 <div class="details">
@@ -55,7 +58,7 @@
                 <form action="/ProjetoPratico_DevWeb/home/others/resultados.html">
                     <div class="input-container">
                         <img src="./assets/images/pin icon.png" alt="Destino Icon" class="pin">
-                        <input type="text" placeholder="Qual será o seu próximo destino?" class="placeholder1">
+                        <input type="text" placeholder="Qual será o seu próximo destino?">
                         <button type="submit">
                             <img src="./assets/images/lupa 1.png" alt="Pesquisa">
                         </button>
@@ -419,50 +422,50 @@
             </ul>
         </div> 
 
-        <!-- <div class="depoimentos">
-            <h3>Depoimentos</h3>
-            <p class="line">_____________</p>
-            <p class="description">Descubra o que nossos usuários têm a dizer sobre sua experiência com o nosso site!</p>
-        </div> -->
-
         <div class="jimin">
-                <button>Cadastre-se</button>
+            <!-- <a href="/contato/contato.html"></a><button>Cadastre-se</button></a> -->
+            <a href="/contato/contato.html"><input type="button" value="Cadastre-se"></a>
         </div>
     </main>
     <script src="./script.js"></script>
 
     <!-- rodapé -->
     <footer id="Contato">
-        <div class="logorodape"><img src="./assets/images/logo.svg" alt="Logo Sightseer's Guide" width="300.79px" height="75px"></div>
-        <div class="rightsreserved"><p style="font-size: 15px;">© 2023 Sightseer’s Guide. All Rights Reserved.</p></div>
-        <div class="socialmedia"><p style="font-size: 20px;">Siga em nossas redes sociais</p></div>
+        <div class="logorights">
+            <img src="./assets/images/logo.svg" alt="Logo Sightseer's Guide" width="300.79px" height="75px" class="rodapelogo"><br>
+            <p>© 2023 Sightseer’s Guide. All Rights Reserved.</p>
+        </div>
+        <div class="socialmedia">
             <ul>
-                <li><a href=""><img src="./assets/images/facebooklogo.png" alt="Facebook" width="71px" height="71px"></a></li>
-                <li><a href=""><img src="./assets/images/instagramlogo.png" alt="Instagram" width="71px" height="71px"></a></li>
-                <li><a href=""><img src="./assets/images/twitterlogo.png" alt="Twitter" width="72.94px" height="60px"></a></li>
+                <li><p style="font-size: 20px;">Siga em nossas redes sociais</p></li>
+                <li><a href=""><img src="./assets/images/facebooklogo.png" alt="Facebook" width="71px" height="71px"></a>
+                    <a href=""><img src="./assets/images/instagramlogo.png" alt="Instagram" width="71px" height="71px"></a>
+                    <a href=""><img src="./assets/images/twitterlogo.png" alt="Twitter" width="72.94px" height="60px"></a>
+                </li>
             </ul>
+        </div>
         
         <!-- end ul 2 -->
         <!-- ul 3 -->
         <div class="links">
             <ul>
-                <li><a href="/videos/rickastley.html">Um guia</a></li>
-                <li><a href="#">Um tour</a></li>
-                <li><a href="#">Cidade</a></li>  
-                <li><a href="#">Um país</a></li>
+                <li><a href="/videos/rickastley.html">Encontre um guia</a></li> <br>
+                <li><a href="#">Encontre um tour</a></li> <br>
+                <li><a href="#">Visite uma cidade</a></li> <br>
+                <li><a href="#">Visite um país</a></li> <br>
             </ul>
         </div>
         <!-- end ul 3 -->
         <!-- ul 4-->
         <div class="links2">
-        <ul>
-            <li><a href="#">Nós</a></li>
+            <ul>
+                <li><a href="#">Sobre Nós</a></li>
                 <li><a href="#">Destinos</a></li>
-               <li><a href="#">Parceiros</a></li> 
-        </ul>
-    </div>
+                <li><a href="#">Parceiros</a></li> 
+            </ul>
+        </div>
     <div class="botao">
-        <a href="buttondown">Conatate-nos</a>
+        <a href="buttondown">Contate-nos</a>
     </div>
         <!-- end ul 4 -->
 </footer>

@@ -230,5 +230,91 @@ align-items: center;
     background-color:rgba(205, 234, 255, 1);
 }
 
+
+/*footer*/
+footer{
+    background-color: #121D83;
+    
+}
+/*end footer*/
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 15px;
+    justify-content: center;
+    padding: 5px;
+}
+
+footer .container ul{
+    width: 25%;
+    color: white;
+}
+
+footer .container h3{
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+
+}
+footer .container .Siga{
+    color: white;
+    text-align: center;
+
+
+}
+
+footer .container .redes-sociais img{
+    margin-right: 10px;
+    text-align: center;
+
+}
+
+footer .container li{
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+
+}
+
+footer .container a{
+    color: white;
+    text-align: center;
+
+}
+
+footer .container{
+    flex-direction: column;
+    color: white;
+    text-align: center;
+
+}
+
+footer .container ul{
+    width: 100%;
+    margin-bottom: 30px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.botao{
+    width: 150px;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    background: #A4D9FF;
+    border-radius: 15px;
+    color: #121D83;
+    text-align: center;
+    display: flex;
+    margin-left: 36rem;
+  }
+
+
+
   
 

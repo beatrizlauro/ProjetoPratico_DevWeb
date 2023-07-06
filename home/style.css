@@ -754,6 +754,9 @@ footer{
     border-radius: 50px 50px 0px 0px;
     background: #121D83;
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    padding: 20px;
+
 }
 
 .rodapelogo{
@@ -775,15 +778,26 @@ footer p{
 }
 
 .socialmedia{
+    text-align: center;
     color: #FFF;
     text-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.30);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
+    font-size: 16px;
     display: flex;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
     align-items: center;
     gap: 4rem;
+    margin-right: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    top: 20px;
+}
+
+.socialmedia p{
+    display: inline-block;
+    text-align: justify;
 }
 
 .links{
@@ -791,6 +805,8 @@ footer p{
     display: inline-block;
     text-align: justify;
     margin: 2.5%;
+    margin-bottom: 10px;
+    top: 20px;
 }
 
 .links a:hover{
@@ -814,6 +830,7 @@ footer p{
     display: inline-block;
     text-align: justify;
     margin: 5%;
+    top: 20px;
 }
 
 .links2 a:hover{
@@ -828,12 +845,14 @@ footer p{
     width: 113px;
     height: 25px;
     background: #A4D9FF;
+    border: none;
     border-radius: 50px;
     color: #121D83;
     justify-content: center;
     text-align: center;
     display: flex;
-    margin-left: 80px;
+    margin-left: 3rem;
+    cursor: pointer;
 }
 
 .links a:link{

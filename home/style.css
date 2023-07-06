@@ -33,11 +33,15 @@ nav ul{
 } 
 
 .menu a:hover{
-    color: purple;
+    color: white;
 }
 
-.menu a:visited{
-    color:#FFF;
+.menu a:visited {
+    color: white;
+}
+
+.menu a:link{
+    color: white;
 }
 
 nav img{
@@ -68,6 +72,16 @@ header button{
 }
 
 /* login icon */
+element.style {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin: auto;
+}
+
 .closelogin{
     color: #0019FF;
     float: right;
@@ -743,3 +757,20 @@ footer{
     display: flex;
     margin-left: 36rem;
   }
+
+.links a:link{
+    color: #FFF;
+}
+
+.links li{
+    color: white;
+    display: inline-block;
+} 
+
+.links a:hover{
+    color: white;
+}
+
+.links a:visited {
+    color: white;
+}

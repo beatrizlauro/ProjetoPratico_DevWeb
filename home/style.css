@@ -774,14 +774,14 @@ footer p{
     margin-left: 50px;
     font-size: 15px;
     text-align: left;
-    margin: 2.5%;
+    margin: 3%;
 }
 
 .socialmedia{
     text-align: center;
     color: #FFF;
     text-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.30);
-    font-size: 16px;
+    font-size: 16px;    
     display: flex;
     font-style: normal;
     font-weight: 600;
@@ -791,22 +791,38 @@ footer p{
     gap: 4rem;
     margin-right: 10px;
     padding: 15px;
-    margin-bottom: 10px;
-    top: 20px;
+    margin-bottom: 15px;
 }
-
-.socialmedia p{
-    display: inline-block;
-    text-align: justify;
-}
+.socialmedia {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+  }
+  
+  .socialmedia ul {
+    list-style: none; /* Remove as bolinhas dos itens da lista */
+    padding: 0; /* Remove o espaçamento interno da lista */
+    margin: 0; /* Remove o espaçamento externo da lista */
+  }
+  
+  .socialmedia ul li {
+    display: inline-block; /* Faz com que os itens fiquem em linha */
+    vertical-align: middle; /* Centraliza verticalmente */
+  }
+  
+  .socialmedia ul li p {
+    margin: 0; /* Remove o espaçamento do parágrafo */
+  }
+  
+  .socialmedia ul li a {
+    display: inline-block; /* Faz com que as âncoras fiquem em linha */
+    margin: 0 10px; /* Adiciona espaçamento entre os ícones (ajuste conforme necessário) */
+    margin-top: 2rem; /* mover os ícones para baixo*/
+  }
 
 .links{
     color: white;
     display: inline-block;
     text-align: justify;
-    margin: 2.5%;
-    margin-bottom: 10px;
-    top: 20px;
+    margin: 0;
 }
 
 .links a:hover{
@@ -826,11 +842,12 @@ footer p{
 }
 
 .links2{
+    height: 20px;
+    width: 10px;
     color: white;
     display: inline-block;
     text-align: justify;
-    margin: 5%;
-    top: 20px;
+    margin: 1%;
 }
 
 .links2 a:hover{
@@ -842,17 +859,22 @@ footer p{
 }
 
 .botao{
-    width: 113px;
-    height: 25px;
+    width: 120px;
+    height: 20px;
     background: #A4D9FF;
-    border: none;
-    border-radius: 50px;
     color: #121D83;
+    border-radius: 50px;
+    border: none;
     justify-content: center;
     text-align: center;
-    display: flex;
-    margin-left: 3rem;
+    display: block;
+    margin-left: -4rem;
+    align-items: center;
     cursor: pointer;
+    transition: all 0.3s ease;
+    float: left;
+    margin-top: 9rem;
+    margin-right: 8rem;
 }
 
 .links a:link{

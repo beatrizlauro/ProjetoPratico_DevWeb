@@ -372,10 +372,6 @@ header button{
 
 /* rodapé */
 
-*{
-    font-family: 'Trebuchet MS', sans-serif;
-}
-
 footer{
     display: flex;
     margin-top: 70px;
@@ -386,6 +382,7 @@ footer{
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
     justify-content: space-between;
     padding: 20px;
+
 }
 
 .rodapelogo{
@@ -413,14 +410,14 @@ footer p{
     font-size: 16px;    
     display: flex;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 100%;
     align-items: center;
-    gap: -4rem;
+    gap: 4rem;
     margin-right: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 .socialmedia {
     text-align: center; /* Centraliza o conteúdo horizontalmente */
@@ -438,22 +435,20 @@ footer p{
   }
   
   .socialmedia ul li p {
-    margin: 0 -10px; /* Remove o espaçamento do parágrafo */
+    margin: 0; /* Remove o espaçamento do parágrafo */
   }
   
   .socialmedia ul li a {
     display: inline-block; /* Faz com que as âncoras fiquem em linha */
-    margin: 0 5px; /* Adiciona espaçamento entre os ícones (ajuste conforme necessário) */
-    margin-top: 0; /* mover os ícones para baixo*/
+    margin: 0 10px; /* Adiciona espaçamento entre os ícones (ajuste conforme necessário) */
+    margin-top: 2rem; /* mover os ícones para baixo*/
   }
 
 .links{
     color: white;
     display: inline-block;
     text-align: justify;
-    margin: 1 10px;
-    width: 0;
-    height: 0;
+    margin: 0;
 }
 
 .links a:hover{
@@ -473,12 +468,12 @@ footer p{
 }
 
 .links2{
-    height: 0;
-    width: 0;
+    height: 20px;
+    width: 10px;
     color: white;
     display: inline-block;
     text-align: justify;
-    margin: 1 10px;
+    margin: 1%;
 }
 
 .links2 a:hover{
@@ -490,22 +485,22 @@ footer p{
 }
 
 .botao{
-    width: 150px;
-    height: 30px;
+    width: 120px;
+    height: 20px;
     background: #A4D9FF;
     color: #121D83;
-    border-radius: 70px;
+    border-radius: 50px;
     border: none;
     justify-content: center;
     text-align: center;
     display: block;
-    margin-left: -6rem;
+    margin-left: -4rem;
     align-items: center;
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     float: left;
-    margin-top: 8rem;
-    margin-right: 9rem;
+    margin-top: 9rem;
+    margin-right: 8rem;
 }
 
 .links a:link{

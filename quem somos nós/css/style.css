@@ -230,32 +230,6 @@ align-items: center;
     background-color:rgba(205, 234, 255, 1);
 }
 
-
-/*footer*/
-footer{
-    display: flex;
-    align-items: flex-end;
-    margin:0%;
-    margin-top: 70px;
-    width: 100%;
-    height: 217px;
-    flex-shrink: 0;
-    border-radius: 50px 50px 0px 0px;
-    background: #121D83;
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
-}
-
-.logorodape{
-    display: block;
-    margin: 0 auto;
-    padding-left: 53px;
-    padding-top: 44px;
-    padding-bottom: 96px;
-    width: 300.787px;
-    height: 75px;
-    flex-shrink: 0;
-}
-
 .rightsreserved{
     padding-left: 53px;
     padding-top: 168px;
@@ -263,57 +237,6 @@ footer{
     text-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
     font-size: 15px;
 }
-
-.socialmedia{
-    text-align: center;
-    color: #FFF;
-    /* normal blur */
-    text-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.30);
-    font-size: 20px;
-    font-family: Trebuchet MS;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
-}
-
-.links{
-    color: white;
-    display: inline-block;
-}
-
-.links a:hover{
-    color: #FFF;
-}
-
-.links a:visited{
-    color:#FFF;
-}
-
-.links2{
-    color: white;
-    display: inline-block;
-}
-
-.links2 a:hover{
-    color: #FFF;
-}
-
-.links2 a:visited{
-    color:#FFF;
-}
-
-.botao{
-    width: 160px;
-    height: 45px;
-    justify-content: center;
-    align-items: center;
-    background: #A4D9FF;
-    border-radius: 15px;
-    color: #121D83;
-    text-align: center;
-    display: flex;
-    margin-left: 36rem;
-  }
 
 /* login icon */
 
@@ -447,7 +370,11 @@ header button{
 
 /* finish login icon */
 
-/*rodapé*/
+/* rodapé */
+
+*{
+    font-family: 'Trebuchet MS', sans-serif;
+}
 
 footer{
     display: flex;
@@ -459,7 +386,6 @@ footer{
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
     justify-content: space-between;
     padding: 20px;
-
 }
 
 .rodapelogo{
@@ -487,14 +413,14 @@ footer p{
     font-size: 16px;    
     display: flex;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 100%;
     align-items: center;
-    gap: 4rem;
+    gap: -4rem;
     margin-right: 10px;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 .socialmedia {
     text-align: center; /* Centraliza o conteúdo horizontalmente */
@@ -512,20 +438,22 @@ footer p{
   }
   
   .socialmedia ul li p {
-    margin: 0; /* Remove o espaçamento do parágrafo */
+    margin: 0 -10px; /* Remove o espaçamento do parágrafo */
   }
   
   .socialmedia ul li a {
     display: inline-block; /* Faz com que as âncoras fiquem em linha */
-    margin: 0 10px; /* Adiciona espaçamento entre os ícones (ajuste conforme necessário) */
-    margin-top: 2rem; /* mover os ícones para baixo*/
+    margin: 0 5px; /* Adiciona espaçamento entre os ícones (ajuste conforme necessário) */
+    margin-top: 0; /* mover os ícones para baixo*/
   }
 
 .links{
     color: white;
     display: inline-block;
     text-align: justify;
-    margin: 0;
+    margin: 1 10px;
+    width: 0;
+    height: 0;
 }
 
 .links a:hover{
@@ -545,12 +473,12 @@ footer p{
 }
 
 .links2{
-    height: 20px;
-    width: 10px;
+    height: 0;
+    width: 0;
     color: white;
     display: inline-block;
     text-align: justify;
-    margin: 1%;
+    margin: 1 10px;
 }
 
 .links2 a:hover{
@@ -562,22 +490,22 @@ footer p{
 }
 
 .botao{
-    width: 120px;
-    height: 20px;
+    width: 150px;
+    height: 30px;
     background: #A4D9FF;
     color: #121D83;
-    border-radius: 50px;
+    border-radius: 70px;
     border: none;
     justify-content: center;
     text-align: center;
     display: block;
-    margin-left: -4rem;
+    margin-left: -6rem;
     align-items: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     float: left;
-    margin-top: 9rem;
-    margin-right: 8rem;
+    margin-top: 8rem;
+    margin-right: 9rem;
 }
 
 .links a:link{

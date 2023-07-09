@@ -746,6 +746,8 @@ span:hover{
     background-color: rgba(24, 170, 255, 0.26);
 }
 
+/* rodapé */
+
 footer{
     display: flex;
     margin-top: 70px;
